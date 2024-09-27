@@ -6,4 +6,5 @@ HTML significa HyperText Markup Language. É usado no frontend e dá a estrutura
 **Curriculum Vitae**:[ link ](https://github.com/weslei573/Roteiros-Web-HTML/blob/main/HTML-Projetos/CV-de-um-pagina/index.html) <br>
 **Basic HTML Website**:[ link ](https://github.com/weslei573/Roteiros-Web-HTML/tree/main/HTML-Projetos/Site-HTML-basico)
 
-**URL do projeto**[ link ](https://roadmap.sh/projects/single-page-cv)
+**URL do projeto**[ link ](https://roadmap.sh/projects/single-page-cv)<br>
+**URL do projeto**[ link ](https://roadmap.sh/projects/basic-html-website)
