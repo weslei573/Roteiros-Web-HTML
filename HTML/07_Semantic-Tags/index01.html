@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="world-wide-web.png" type="image/x-icon">
 	<title>Formatting a Page</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -120,7 +121,9 @@
 					<li>i, ii, iii, ...</li>
 				</ol>
 				<p>
-					O elemento HTML Definition List (&lt;dl&gt;) engloba uma lista de pares de termos e descrições. Um uso comum para este elemento é para implementar um glossário ou exibir metadados(uma lista de pares chave e valor). <br> Exemplo abaixo
+					O elemento HTML Definition List (&lt;dl&gt;) engloba uma lista de pares de termos e descrições. Um
+					uso comum para este elemento é para implementar um glossário ou exibir metadados(uma lista de pares
+					chave e valor). <br> Exemplo abaixo
 				</p>
 				<dl>
 					<dt>Apples</dt>
@@ -134,8 +137,41 @@
 		<article>
 			<h2>Tables</h2>
 			<p>
-				O elemento HTML representa dados tabulares — isto é, informações apresentadas em uma tabela bidimensional composta por linhas e colunas de células contendo dados .&lt;table&gt;
+				O elemento HTML representa dados tabulares — isto é, informações apresentadas em uma tabela
+				bidimensional composta por linhas e colunas de células contendo dados .&lt;table&gt;
 			</p>
+
+			<table>
+				<caption>List os Numbers</caption>
+				<thead>
+					<tr>
+						<th colspan="2">num 1(colspan="2")</th>
+						<th>num 2</th>
+						<th colspan="2">num 3(colspan="2")</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Um</td>
+						<td>Dois</td>
+						<td>&fcy;</td>
+						<td>Três</td>
+						<td rowspan="2">&fcy; (rowspan="2")</td>
+					</tr>
+					<tr>
+						<td colspan="2">(colspan="2")</td>
+						<td>cinco</td>
+						<td>seis</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th colspan="5">
+							Exemplo de tabela (colspan="5")
+						</th>
+					</tr>
+				</tfoot>
+			</table>
 		</article>
 	</main>
 
