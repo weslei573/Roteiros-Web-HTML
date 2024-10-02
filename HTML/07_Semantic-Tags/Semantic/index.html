@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tutorial</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- Semantic HEADER -->
+	<header>
+
+		<h1>My Site</h1>
+
+		<!-- Semantic NAVIGATION -->
+		<nav>
+			<ul>
+				<li>
+					<a href="#">Home</a>
+				</li>
+
+				<li>
+					<a href="#">About</a>
+				</li>
+
+				<li>
+					<a href="#">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Semantic main content -->
+	<main>
+
+		<!-- Semantic Article -->
+		<article>
+			<h2>Artigo - (&lt;article&gt;)</h2>
+			<p>
+				O conteúdo dentro da (article) tag deve ser autocontido e significativo, e pode incluir títulos,
+				parágrafos, imagens e outros tipos de conteúdo.
+			</p>
+			<aside>
+				<h3>Figura e legenda da figura - (&lt;figure&gt;, &lt;figcaption&gt;)</h3>
+				<p>
+					A figure tag é usada para marcar o conteúdo em si, e a figcaption tag é usada para marcar uma
+					legenda ou descrição para o conteúdo.
+				</p>
+				<figure>
+					<img src="desk-3139127_1280.jpg" alt="Image description">
+					<figcaption>Imagen da Reunião</figcaption>
+				</figure>
+			</aside>
+
+			<!-- Semantic Details e Summary -->
+			<details>
+				<summary>Detalhes e Resumo (&lt;details&gt;, &lt;summary&gt; )</summary>
+				<p>
+					As tags details e summary são usadas para marcar uma seção de conteúdo recolhível. A summary tag é
+					usada
+					para marcar o título da seção, e a details tag é usada para marcar o conteúdo em si.
+				</p>
+			</details>
+			<!-- Fim Semantic Details e Summary -->
+
+		</article>
+		<!-- Fim Semantic Article -->
+
+		<!-- Semantic Aside -->
+		<div>
+			<article>
+				<h2>Aparte - (&lt;aside&gt;)</h2>
+				<p>
+					Tag é usada para marcar conteúdo que é relacionado ao conteúdo principal em uma página da web, mas
+					não é parte integrante dela. Isso pode incluir coisas como informações suplementares, anúncios ou
+					artigos relacionados.
+				</p>
+			</article>
+			<aside>
+				<h3>Related Articles</h3>
+				<ul>
+					<li><a href="#">Article 1</a></li>
+					<li><a href="#">Article 2</a></li>
+					<li><a href="#">Article 3</a></li>
+				</ul>
+			</aside>
+
+			<!-- Marca -->
+			<p>A <mark>mark</mark> tag é usada para marcar texto que foi destacado por algum motivo. Isso pode incluir
+				coisas como resultados de pesquisa ou texto que foi destacado por um usuário.</p>
+		</div>
+		<!-- Fim Semantic Aside -->
+
+		<!-- Semantic Section -->
+		<section>
+			<h2>Seção - (&lt;section&gt;)</h2>
+			<p>
+				Tag é usada para marcar seções de uma página da web que são agrupadas tematicamente. Isso pode incluir
+				coisas como capítulos ou seções de um artigo longo, ou diferentes partes de uma página de produto.
+			</p>
+			<aside>
+				<h3>Rodapé - (&lt;footer&gt;)</h3>
+				<p>
+					Tag é usada para marcar a seção inferior de uma página da web, o que pode incluir coisas como
+					informações de direitos autorais, detalhes de contato ou links para perfis de mídia social.
+				</p>
+
+				<!-- DIV E SPAN -->
+				<div>
+					<h4>E quanto a (&lt;div&gt;)e (&lt;span&gt;)?</h4>
+					<p>
+						Não são tags semânticas. Elas são usadas para marcar áreas de conteúdo genérico e não transmitem
+						nenhum significado específico. Você só deve usar essas tags se não tiver outra opção.
+					</p>
+				</div>
+				<!-- FIM DIV E SPAN -->
+			</aside>
+		</section>
+		<!-- Fim Semantic Section -->
+
+	</main>
+	<!-- Fim Semantic MAIN content -->
+
+	<!-- Semantic Footer -->
+	<footer>
+		<ul>
+			<li>
+				<a href="#">Top</a>
+			</li>
+			<li>
+				<!--
+					Tempo. A <time>tag é usada para marcar uma data ou hora. Ao usar a <time>tag, você pode facilitar para mecanismos de busca e outras tecnologias entenderem o significado do conteúdo em sua página.
+				-->
+				<p>
+					The event will take place on <time datetime="2021-01-01">January 1st, 2021</time>.
+				</p>
+			</li>
+			<li>
+				<!--
+					Progresso. A <progress> tag é usada para marcar uma barra de progresso. Ao usar a <progress>tag, você pode facilitar para os usuários entenderem o progresso de uma tarefa.
+				-->
+				<progress value="50" max="100"></progress>
+			</li>
+		</ul>
+		<p>&copy; 2024 My Site</p>
+	</footer>
+	<!-- Fim semantic Footer -->
+</body>
+
+</html>
