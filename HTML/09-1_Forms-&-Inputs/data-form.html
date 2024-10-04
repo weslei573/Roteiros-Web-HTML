@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Weslei Augusto">
+	<meta name="description" content="Ajudar os usuários a inserir dados em formulários">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inserir Dados em Formulários</title>
+	<link rel="shortcut icon" href="./world-wide-web.png" type="image/x-icon">
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+	<header>
+		<h1>Ajudar os usuários a inserir dados em formulários</h1>
+
+		<nav aria-label="primary-navigation">
+			<ul>
+				<li>
+					<a href="./#">Home</a>
+				</li>
+				<li>
+					<a href="./#forntend">Aprendizador</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<hr>
+
+	<main>
+		<section>
+			<h2>Na pratica</h2>
+			<p>
+				Use o atributo (name) para identificar os dados que o usuário insere com o controle.
+			</p>
+
+			<form action="https://httpbin.org/get" method="get">
+				<fieldset>
+					<legend>Controles de formulário de agrupamento</legend>
+					<p>
+						<label for="name">Name</label>
+						<!-- O atributo for no elemento de rótulo corresponde ao atributo id na entrada. -->
+						<input type="text" name="name" id="name">
+					</p>
+					<p>
+						<label for="photo">Photo</label>
+						<input type="file" name="photo" id="photo">
+					</p>
+					<p>
+						<input type="checkbox" name="subscribe" id="subscribe" value="web.dev">
+						<label for="subscribe">Subscribe to web.dev</label>
+					</p>
+					<!-- Permitir várias linhas de texto -->
+					<p>
+						<label for="comment">Comment</label> <br>
+						<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+					</p>
+					<!-- Escolher de uma lista de opções -->
+					<p>
+						<label for="color">Color</label>
+						<select name="color" id="color">
+							<option value="orange">Orange</option>
+							<option value="pink">Pink</option>
+							<option selected value="black">Black</option>
+						</select>
+					</p>
+					<button type="button">Save</button>
+				</fieldset>
+			</form>
+		</section>
+
+	</main>
+
+	<hr>
+
+	<footer>
+		<p>
+			&lt;&lt;&lt; &copy; <a href="about.html">Weslei Augusto</a> &gt;&gt;&gt;
+		</p>
+		<p>
+			<a href="#">Back to Top</a>
+		</p>
+	</footer>
+</body>
+
+</html>

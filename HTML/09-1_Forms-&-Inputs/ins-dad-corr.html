@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Weslei Augusto">
+	<meta name="description" content="Ajude os usuários a inserir os dados corretos nos formulários">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inserir os Dados Corretos</title>
+	<link rel="shortcut icon" href="./world-wide-web.png" type="image/x-icon">
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+	<header>
+		<h1>Ajude os usuários a inserir os dados corretos nos formulários</h1>
+
+		<nav aria-label="primary-navigation">
+			<ul>
+				<li>
+					<a href="./#">Home</a>
+				</li>
+				<li>
+					<a href="./#forntend">Aprendizador</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<hr>
+
+	<main>
+		<section>
+			<h2>Na pratica</h2>
+			<p>
+				É frustrante preencher um formulário sem saber quais campos são obrigatórios. ou as restrições desses
+				campos. Por exemplo, você insere um nome de usuário e envia um formulário, mas descobre que os nomes de
+				usuário precisam ter pelo menos oito caracteres.
+			</p>
+
+			<form action="https://httpbin.org/get" method="get">
+				<fieldset>
+					<legend>Ajudar os usuários com a falta acidental de campos obrigatórios</legend>
+					<p>
+						<label for="name">Name</label>
+						<input required type="text" name="name" id="name">
+					</p>
+					<p>
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" required>
+					</p>
+					<p>
+						<label for="password">Password</label>
+						<input required type="password" name="password" id="password"
+							aria-describedby="password-validation" minlength="8">
+						<span id="password-validation" class="validation-message">Please use at least eight
+							characters.</span>
+					</p>
+				</fieldset>
+				<button type="submit">Save</button>
+			</form>
+		</section>
+
+	</main>
+
+	<hr>
+
+	<footer>
+		<p>
+			&lt;&lt;&lt; &copy; <a href="about.html">Weslei Augusto</a> &gt;&gt;&gt;
+		</p>
+		<p>
+			<a href="#">Back to Top</a>
+		</p>
+	</footer>
+</body>
+
+</html>

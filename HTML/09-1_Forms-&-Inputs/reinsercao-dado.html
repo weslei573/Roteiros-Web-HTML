@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Weslei Augusto">
+	<meta name="description" content="Ajudar os usuários a evitar a reinserção de dados em formulários">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reinserção de Dados</title>
+	<link rel="shortcut icon" href="./world-wide-web.png" type="image/x-icon">
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+	<header>
+		<h1>Ajudar os usuários a evitar a reinserção de dados em formulários</h1>
+
+		<nav aria-label="primary-navigation">
+			<ul>
+				<li>
+					<a href="./#">Home</a>
+				</li>
+				<li>
+					<a href="./#forntend">Aprendizador</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<hr>
+
+	<main>
+		<section>
+			<h2>Na pratica</h2>
+			<p>
+				O preenchimento automático pode ajudar você aqui. Você digita seu endereço apenas uma vez. A partir de
+				agora, seu navegador vai oferecer a opção de preencher automaticamente o mesmo endereço para outros
+				formulários.
+			</p>
+
+			<form action="https://httpbin.org/get" method="get">
+				<fieldset>
+					<legend>Ajudar navegadores com o preenchimento automático</legend>
+					<!-- Usar valores de atributos sensíveis -->
+					<!-- O atributo Autocomplete -->
+					<p>
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name" autocomplete="username">
+					</p>
+					<p>
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" autocomplete="email">
+					</p>
+				</fieldset>
+				<button type="submit">Save</button>
+			</form>
+		</section>
+
+	</main>
+
+	<hr>
+
+	<footer>
+		<p>
+			&lt;&lt;&lt; &copy; <a href="about.html">Weslei Augusto</a> &gt;&gt;&gt;
+		</p>
+		<p>
+			<a href="#">Back to Top</a>
+		</p>
+	</footer>
+</body>
+
+</html>

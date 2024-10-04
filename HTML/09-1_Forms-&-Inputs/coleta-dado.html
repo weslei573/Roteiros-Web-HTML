@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Weslei Augusto">
+	<meta name="description" content="Usar formulários para coletar de dados">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Coletar de Dados</title>
+	<link rel="shortcut icon" href="./world-wide-web.png" type="image/x-icon">
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+	<header>
+		<h1>Usar formulários para coletar de dados</h1>
+
+		<nav aria-label="primary-navigation">
+			<ul>
+				<li>
+					<a href="./#">Home</a>
+				</li>
+				<li>
+					<a href="./#forntend">Aprendizador</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<hr>
+
+	<main>
+		<section>
+			<h2>Na pratica</h2>
+			<p>
+				Para formulários que processam dados sensíveis, use o método POST-method="post".
+			</p>
+			<p>
+				Se os dados forem compartilháveis, use o método GET-method="get".
+			</p>
+
+			<form action="https://example.com/animals" method="post">
+				<fieldset>
+					<legend>Controles de formulário</legend>
+					<p>
+						<label for="animal">What is your favorite animal?</label>
+						<input type="text" id="animal" name="animal">
+					</p>
+					<button type="submit">Save</button>
+				</fieldset>
+			</form>
+		</section>
+
+	</main>
+
+	<hr>
+
+	<footer>
+		<p>
+			&lt;&lt;&lt; &copy; <a href="about.html">Weslei Augusto</a> &gt;&gt;&gt;
+		</p>
+		<p>
+			<a href="#">Back to Top</a>
+		</p>
+	</footer>
+</body>
+
+</html>

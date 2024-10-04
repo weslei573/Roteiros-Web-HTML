@@ -13,18 +13,15 @@
 
 <body>
 	<header>
-		<h1>Formulários</h1>
+		<h1>Aprendendo Formulários</h1>
 
 		<nav aria-label="primary-navigation">
 			<ul>
 				<li>
-					<a href="#html">Learning HTML</a>
+					<a href="#">Home</a>
 				</li>
 				<li>
-					<a href="#vacation">Planning a Vacation</a>
-				</li>
-				<li>
-					<a href="#contact">Contact Me</a>
+					<a href="#forntend">Aprendizador</a>
 				</li>
 			</ul>
 		</nav>
@@ -33,126 +30,23 @@
 	<hr>
 
 	<main>
-
-		<article id="html">
-			<h2>Usar formulários para coletar de dados</h2>
-			<p>
-				O que é um elemento de formulário?
-			</p>
-			<!--
-				Para formulários que processam dados sensíveis, use o método POST-method="post".
-				Se os dados forem compartilháveis, use o método GET-method="get".
-			-->
-
-			<form action="https://example.com/animals" method="post" target="_blank">
-				<p>
-					<label for="animal">What is your favorite animal?</label>
-					<input type="text" id="animal" name="animal">
-				</p>
-				<button type="submit">Save</button>
-			</form>
-		</article>
-
-		<hr>
-
-		<article>
-			<h2>Ajudar os usuários a inserir dados em formulários </h2>
-			<p>
-				Use o atributo (name) para identificar os dados que o usuário insere com o controle.
-			</p>
-
-			<form action="https://httpbin.org/get" method="get">
-				<fieldset>
-					<legend>Controles de formulário de agrupamento</legend>
-					<p>
-						<label for="name">Name</label>
-						<!-- O atributo for no elemento de rótulo corresponde ao atributo id na entrada. -->
-						<input type="text" name="name" id="name">
-					</p>
-					<p>
-						<label for="photo">Photo</label>
-						<input type="file" name="photo" id="photo">
-					</p>
-					<p>
-						<input type="checkbox" name="subscribe" id="subscribe" value="web.dev">
-						<label for="subscribe">Subscribe to web.dev</label>
-					</p>
-					<!-- Permitir várias linhas de texto -->
-					<p>
-						<label for="comment">Comment</label> <br>
-						<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-					</p>
-					<!-- Escolher de uma lista de opções -->
-					<p>
-						<label for="color">Color</label>
-						<select name="color" id="color">
-							<option value="orange">Orange</option>
-							<option value="pink">Pink</option>
-							<option selected value="black">Black</option>
-						</select>
-					</p>
-					<button type="button">Save</button>
-				</fieldset>
-			</form>
-		</article>
-
-		<hr>
-
-		<article>
-			<h2>Ajudar os usuários a evitar a reinserção de dados em formulários </h2>
-			<p>
-				O preenchimento automático pode ajudar você aqui. Você digita seu endereço apenas uma vez. A partir de
-				agora, seu navegador vai oferecer a opção de preencher automaticamente o mesmo endereço para outros
-				formulários.
-			</p>
-			<form action="https://httpbin.org/get" method="get">
-				<fieldset>
-					<legend>Ajudar navegadores com o preenchimento automático</legend>
-					<!-- Usar valores de atributos sensíveis -->
-					<!-- O atributo Autocomplete -->
-					<p>
-						<label for="nome">Name</label>
-						<input type="text" name="nome" id="nome" autocomplete="username">
-					</p>
-					<p>
-						<label for="email">Email</label>
-						<input type="email" name="email" id="email" autocomplete="email">
-					</p>
-				</fieldset>
-				<button type="submit">Save</button>
-			</form>
-		</article>
-
-		<hr>
-
-		<article>
-			<h2>Ajude os usuários a inserir os dados corretos nos formulários</h2>
-			<p>
-				É frustrante preencher um formulário sem saber quais campos são obrigatórios. ou as restrições desses
-				campos. Por exemplo, você insere um nome de usuário e envia um formulário, mas descobre que os nomes de
-				usuário precisam ter pelo menos oito caracteres.
-			</p>
-			<form action="https://httpbin.org/get" method="get">
-				<fieldset>
-					<legend>Ajudar os usuários com a falta acidental de campos obrigatórios</legend>
-					<p>
-						<label for="nom">Name</label>
-						<input required type="text" name="nom" id="nom">
-					</p>
-					<p>
-						<label for="emails">Email</label>
-						<input type="email" name="emails" id="emails" required>
-					</p>
-					<p>
-						<label for="password">Password</label>
-						<input required type="password" name="password" id="password"aria-describedby="password-validation" minlength="8">
-						<span id="password-validation" class="validation-message">Please use at least eight
-							characters.</span>
-					</p>
-				</fieldset>
-				<button type="submit">Save</button>
-			</form>
-		</article>
+		<section id="forntend">
+			<h2>Frontend</h2>
+			<ul>
+				<li>
+					<a href="coleta-dado.html">Usar formulários para coletar de dados</a>
+				</li>
+				<li>
+					<a href="data-form.html">Ajudar os usuários a inserir dados em formulários</a>
+				</li>
+				<li>
+					<a href="reinsercao-dado.html">Ajudar os usuários a evitar a reinserção de dados em formulários</a>
+				</li>
+				<li>
+					<a href="ins-dad-corr.html">Ajude os usuários a inserir os dados corretos nos formulários</a>
+				</li>
+			</ul>
+		</section>
 	</main>
 
 	<hr>
