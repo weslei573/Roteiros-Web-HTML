@@ -8,7 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Inserir os Dados Corretos</title>
 	<link rel="shortcut icon" href="./world-wide-web.png" type="image/x-icon">
-	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="idc-style.css" type="text/css">
 </head>
 
 <body>
@@ -30,7 +31,7 @@
 	<hr>
 
 	<main>
-		<section>
+		<article>
 			<h2>Na pratica</h2>
 			<p>
 				É frustrante preencher um formulário sem saber quais campos são obrigatórios. ou as restrições desses
@@ -38,28 +39,75 @@
 				usuário precisam ter pelo menos oito caracteres.
 			</p>
 
-			<form action="https://httpbin.org/get" method="get">
-				<fieldset>
-					<legend>Ajudar os usuários com a falta acidental de campos obrigatórios</legend>
-					<p>
-						<label for="name">Name</label>
-						<input required type="text" name="name" id="name">
-					</p>
-					<p>
-						<label for="email">Email</label>
-						<input type="email" name="email" id="email" required>
-					</p>
-					<p>
-						<label for="password">Password</label>
-						<input required type="password" name="password" id="password"
-							aria-describedby="password-validation" minlength="8">
-						<span id="password-validation" class="validation-message">Please use at least eight
-							characters.</span>
-					</p>
-				</fieldset>
-				<button type="submit">Save</button>
-			</form>
-		</section>
+			<section>
+				<h3>Ajudar os usuários com a falta acidental de campos obrigatórios</h3>
+				<p>
+					Formato correto e as restrições para os dados inseridos em seus formulários é necessário especificar
+					quais campos são obrigatórios.
+				</p>
+				<form >
+					<fieldset>
+						<legend>Campos obrigatório</legend>
+						<p>
+							<label for="name">Name</label>
+							<input required type="text" name="name" id="name">
+						</p>
+						<p>
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" required>
+						</p>
+					</fieldset>
+					<button type="submit">Save</button>
+				</form>
+			</section>
+
+			<section>
+				<h3>Ajude o usuário a inserir o formato correto</h3>
+				<p>
+					Como você instruiria o navegador de que o usuário deve inserir pelo menos oito caracteres em um
+					campo de um formulário?
+				</p>
+				<form>
+					<fieldset>
+						<legend>Inserir pelo menos oito caracteres</legend>
+						<p>
+							<label for="password">Password (required)</label>
+							<input required type="password" name="password" id="password"
+								aria-describedby="password-validation" minlength="8">
+							<span id="password-validation" class="validation-message">Please use at least eight
+								characters.</span>
+						</p>
+					</fieldset>
+					<button type="submit">Save</button>
+				</form>
+			</section>
+
+			<section>
+				<h3>Comunicar suas regras de validação</h3>
+				<code>
+					&lt;input required minlength="8" type="password" id="password" name="password" <strong style="color: blueviolet;">aria-describedby="password-minlength</strong>"&gt; <br>
+					&lt;/div id="password-minlength"&gt;Enter at least eight characters &lt;/div&gt;
+				</code>
+				<p>
+					Confirme se todos os usuários entenderam as regras de validação. Para isso, conecte o controle
+					de formulário a um elemento que explique as regras. Para fazer isso, adicione um atributo
+					aria-describedby ao elemento com o id do formulário.
+				</p>
+			</section>
+
+			<section>
+				<h3>Atributo padrão</h3>
+				<p>
+					Às vezes, você quer definir regras de validação mais avançadas. Novamente, é possível usar um
+					atributo HTML. Ele se chama pattern, e você pode definir expressão regular como valor.
+				</p>
+				<code>
+					&lt;input required  <strong style="color: blueviolet;">pattern="[a-z]{2,20}"</strong> type="text" id="animal" name="animal"&gt;
+				</code>
+				<p>Aqui, apenas letras minúsculas são permitidas; o usuário deve inserir pelo menos dois e não mais do
+					que vinte.</p>
+			</section>
+		</article>
 
 	</main>
 
@@ -73,6 +121,7 @@
 			<a href="#">Back to Top</a>
 		</p>
 	</footer>
+	<script src="script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,7 @@
+button {
+	margin-top: 1rem;
+  }
+
+  input:required {
+	border: 2px solid red;
+}
