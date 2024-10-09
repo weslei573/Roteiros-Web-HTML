@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+}
+
+h1 {
+	border: 2px dashed red;
+	width: 50%;
+	font-size: 3rem;
+	padding: 0.5em; /* Esse 0.5em e relacionador ao 3rem, ou seja, metade
+	EM e bom se usado para PADDING & MARGIN
+	*/
+}
+
+main {
+	font-size: 2rem;
+}
+
+p {
+	font-size: 2rem;
+	width: 40ch; /* Aqui vai de 40 caracteres antes da linha termina */
+}
