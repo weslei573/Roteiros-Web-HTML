@@ -1,0 +1,27 @@
+/*
+Tipografia é a maneira como o texto é organizado e apresentado
+*/
+
+body {
+	padding: 10%;
+	font-size: 2rem;
+	font-family: 'Courier New', Courier, monospace;
+	/* Fonte que sera usada */
+}
+
+/* input,
+button {
+	font: inherit; - aqui estou inportando a configuração de cima
+}
+*/
+
+p {
+	line-height: 1.5;
+	/* Espeço da linha */
+	/*word-spacing: 0.5em; - Espaço entre as palavra */
+	/*letter-spacing: 0.1em; - espaço entre as letra */
+	font-weight: normal;
+	/* Peso da fonte */
+	font-style: normal;
+	/* Estilo da fonte */
+}
