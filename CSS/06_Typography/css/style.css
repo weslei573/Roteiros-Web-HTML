@@ -1,29 +1,27 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+/*
+Tipografia é a maneira como o texto é organizado e apresentado
+*/
+
+body {
+	padding: 10%;
+	font-size: 2rem;
+	font-family: 'Courier New', Courier, monospace;
+	/* Fonte que sera usada */
 }
 
-.container {
-	border: 10px double red;
-	font-size: 1.5rem;
-	margin: 1.5em;
-	/* margin-top: 1.5em;
-	margin-right: 2em;
-	margin-bottom: 2em;
-	margin-left: 2em; */
-	padding: 1.5em;
-	outline: 5px solid purple;
-	outline-offset: -20px;
+/* input,
+button {
+	font: inherit; - aqui estou inportando a configuração de cima
 }
+*/
 
-.circle {
-	margin: 3rem auto;
-	background-color: darkgoldenrod;
-	width: 100px;
-	height: 100px;
-	border: 2px solid black;
-	border-radius: 50px;
-	outline: 2px solid red;
-	outline-offset: 0.25rem;
+p {
+	line-height: 1.5;
+	/* Espeço da linha */
+	/*word-spacing: 0.5em; - Espaço entre as palavra */
+	/*letter-spacing: 0.1em; - espaço entre as letra */
+	font-weight: normal;
+	/* Peso da fonte */
+	font-style: normal;
+	/* Estilo da fonte */
 }
