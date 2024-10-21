@@ -1,27 +1,29 @@
-/*
-Tipografia é a maneira como o texto é organizado e apresentado
-*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
 	padding: 10%;
 	font-size: 2rem;
-	font-family: 'Courier New', Courier, monospace;
-	/* Fonte que sera usada */
+	font-family: 'Roboto', sans-serif;
 }
 
-/* input,
-button {
-	font: inherit; - aqui estou inportando a configuração de cima
+a {
+	text-decoration: none;
+	cursor: pointer;  
+	/* not-allowed - aparece um simbolo de negação */
+	color: hsl(240, 100%, 27%);
 }
-*/
 
-p {
-	line-height: 1.5;
-	/* Espeço da linha */
-	/*word-spacing: 0.5em; - Espaço entre as palavra */
-	/*letter-spacing: 0.1em; - espaço entre as letra */
-	font-weight: normal;
-	/* Peso da fonte */
-	font-style: normal;
-	/* Estilo da fonte */
+a:visited {
+	/*a:visited - se a link ja foi visualizador ele ficar com essa configuração*/
+	color: blueviolet;
+}
+
+a:hover, a:focus {
+	color: hsl(210, 100%, 56%);
+	/* opacity: 0.6; /* Transparencia */ 
+}
+
+a:active {
+	/*a:active - se esta ativado isso e você clica e segura, ai ficar com a configuração*/
+	color: red;
 }
