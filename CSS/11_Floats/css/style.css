@@ -26,6 +26,8 @@ body {
 
 .clear {
     clear: both;
+    /*CSS especifica se um elemento pode ter elementos flutuantes ao seu lado ou se devem ser movidos para abaixo dele (clear). */
+    /* both = É uma palavra-chave que indica que o elemento será movido para baixo para limpar os elementos flutuantes do lado esquerdo e direito. */
 }
 
 section {
