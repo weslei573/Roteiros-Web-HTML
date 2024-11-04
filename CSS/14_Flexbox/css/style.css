@@ -19,13 +19,39 @@ body {
     border: 1px solid black;
 
     display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    align-content: space-evenly;
 }
 
 .box {
-    min-width: 100px;
-    min-height: 100px;
+    /* 
+    min-width: 100px; */
+    height: 100px;
     background-color: #000;
-    color: white;
+    color: #fff;
     font-size: 2rem;
     padding: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Three values: flex-grow | flex-shrink | flex-basis */
+    flex: 1 1 150px;
+
+    /* flex-grow:1; */
+    /* flex-shrink: 1;
+    flex-basis: 250px; */
+}
+
+.box:nth-child(2) {
+    /* flex-grow: 2; --- Efine o fator de crescimento flexível, que especifica quanto do espaço livre positivo do contêiner flexível , se houver, deve ser atribuído ao tamanho principal do item flexível */
+    /* flex-shrink: 2; --- Define o fator de encolhimento flex de um item flex. Se o tamanho de todos os itens flex for maior que o contêiner flex, os itens flex podem encolher para se ajustar de acordo com seu valor.*/
+
+    flex: 2 2 150px; 
+    /*flex: 2 2 150px --- define como um item flexível aumentará ou diminuirá para caber no espaço disponível em seu contêiner flexível.*/
+    order: 1;
 }
