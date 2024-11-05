@@ -9,9 +9,41 @@
 body {
     font-family: "Roboto", sans-serif;
     min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 75px auto 75px;
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd hd"
+        "mn mn mn mn mn mn mn sb sb"
+        "ft ft ft ft ft ft ft ft ft"
+    ;
+    gap: 1rem;
 }
 
+.el {
+    background-color: rebeccapurple;
+    color: #fff;
+    display: grid;
+    place-content: center;
+}
+
+.header {
+    grid-area: hd;
+}
+
+.sidebar {
+    grid-area: sb;
+    background-color: #00f;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+/* Configuração de uma seção */
 .container {
+    grid-area: mn;
     min-height: 400px;
     display: grid;
     /* grip -- grade, com linhas e colunas, facilitando o design de páginas */
@@ -32,18 +64,14 @@ body {
 
 .box:first-child {
     background-color: #00f;
-    /*  grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3; */
+    /*  grid-column-start: 1; -- grid-column-end: 4;
+    grid-row-start: 1; -- grid-row-end: 3; */
     grid-column: 1 / 4;
     grid-row: 1 / 3;
 
     display: grid;
-    /* 
-    align-content: center;
-    justify-content: center; */
     place-content: center;
+    /* align-content: center; - justify-content: center; */
 }
 
 .box:nth-child(2) {
@@ -51,3 +79,4 @@ body {
     grid-column: 1/5;
     grid-row: 3/4;
 }
+/* Fim da seção */
