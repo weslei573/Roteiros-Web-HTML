@@ -52,7 +52,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 200px;
     grid-gap: 20px;
-    max-width: 800px;
+    max-width: 1000px;
     padding: 10px;
     margin: 0 auto;
 }
@@ -61,7 +61,7 @@ img {
     margin-bottom: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 930px) {
     .grid2 {
         grid-template-columns: 1fr;
     }
@@ -71,7 +71,7 @@ img {
         overflow: scroll;
     }
 
-    .sidebar > div  {
+    .sidebar>div {
         flex: 1 0 200px;
         margin: 0 10px;
     }
