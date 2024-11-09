@@ -9,6 +9,7 @@
 
 .grid-item {
     display: grid;
+    padding: 2rem;
 }
 
 .grid-item img {
