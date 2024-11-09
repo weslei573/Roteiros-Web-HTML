@@ -9,13 +9,16 @@
 	font-size: 1.2rem
 }
 
-a {
-	text-decoration: none;
-	color: whitesmoke;
+body {
+	background-color: beige;
+}
+
+p {
+	color: #333;
 }
 
 .header {
-	background: #1d1e20;
+	background-color: white;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -34,6 +37,59 @@ a {
 .menu li a {
 	display: block;
 	padding: 10px;
+}
+
+/* ARTICLE */
+
+article {
+	padding-top: 4vh;
+	margin: 0 1rem;
+	box-sizing: border-box;
+	min-height: fit-content;
+}
+
+/* PROFILE */
+
+#profile {
+	background-color: beige;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 97vh;
+	gap: 2rem;
+}
+
+.section_text {
+	align-self: center;
+	text-align: center;
+}
+
+.section_text p {
+	font-weight: 600;
+}
+
+.section_text_p1 {
+	text-align: center;
+}
+
+.section_text_p2 {
+	font-size: 1.75rem;
+}
+
+.title {
+	font-size: 3rem;
+	text-align: center;
+}
+
+/* SECTION ABOUT */
+
+#about {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	gap: 2rem;
 }
 
 th,
