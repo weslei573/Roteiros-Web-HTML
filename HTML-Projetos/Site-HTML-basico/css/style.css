@@ -43,7 +43,7 @@ p {
 
 article {
 	padding-top: 4vh;
-	margin: 0 2rem;
+	margin: 0 auto;
 	box-sizing: border-box;
 	min-height: fit-content;
 }
