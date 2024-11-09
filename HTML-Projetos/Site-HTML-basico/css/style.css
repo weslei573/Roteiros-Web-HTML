@@ -28,6 +28,7 @@ p {
 
 .menu {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .menu li {
@@ -133,4 +134,22 @@ footer {
 	gap: 2rem;
 	padding: 2rem;
 	background-color: white;
+}
+
+@media (max-width:900px) {
+	#profile{
+		flex-wrap: wrap;
+	}
+
+	.section_pic-container img {
+		width: 100%;
+	}
+
+	.about-containers {
+		flex-wrap: wrap;
+	}
+
+	.section {
+		margin: 0 1rem;
+	}
 }
