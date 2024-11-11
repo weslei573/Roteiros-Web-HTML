@@ -1,13 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-/* RESET */
+/* || RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* IMAGEM RESPONSIVA */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
-/* GENERAL STYLES */
+/* || GENERAL STYLES */
 body {
     font: 1.5rem "Nunito", sans-serif;
     min-height: 100vh;
@@ -55,7 +61,7 @@ footer {
     bottom: 0;
 }
 
-/* SMALL */
+/* || SMALL */
 @media screen and (min-width: 576px) {
     body {
         background-color: green;
@@ -68,7 +74,7 @@ footer {
 }
 
 
-/* MEDIUN */
+/* || MEDIUN */
 @media screen and (min-width: 768px) {
     body {
         background-color: gold;
@@ -76,7 +82,7 @@ footer {
     }
 }
 
-/* LARGE */
+/* || LARGE */
 @media screen and (min-width: 992px) {
     body {
         background-color: firebrick;
@@ -84,7 +90,7 @@ footer {
     }
 }
 
-/* XL */
+/* || XL */
 @media screen and (min-width: 1200px) {
     body {
         background-color: rebeccapurple;
@@ -92,7 +98,7 @@ footer {
     }
 }
 
-/* MOBILE DEVICE LANDSCAPE */
+/* || MOBILE DEVICE LANDSCAPE */
 @media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
     body {
         background-color: dodgerblue;
