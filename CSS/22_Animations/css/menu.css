@@ -8,7 +8,7 @@
 
 :root {
   --HEADER-BGCOLOR: #333;
-  --HEADER-COLOR: #f5f5f5;
+  --HEADER-COLOR: whitesmoke;
 }
 
 html {
@@ -71,7 +71,7 @@ header {
 
 :is(header:hover, header:focus-within) .menu-icon {
   background-color: transparent;
-  transform: rotate(720deg);
+  transform: rotate(720deg)
 }
 
 :is(header:hover, header:focus-within) .menu-icon::before {
