@@ -30,22 +30,22 @@ textarea {
     --FS: clamp(1rem, 2.2vh, 1.5rem);
 
     /* COLORS */
-    --BGCOLOR: #ffa500;
     --BGCOLOR-FADE: rgb(252, 220, 160);
+    --BGCOLOR: #ffa500;
     --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
     --BODY-BGCOLOR: #fff;
-    --FONT-COLOR: #000;
     --BORDER-COLOR: #333;
-    --HIGHLIGHT-COLOR: rgb(51, 178, 51);
-    --LINK-COLOR: #000;
-    --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
-    --LINK-ACTIVE: #ffa500;
+    --BUTTON-COLOR: #fff;
+    --FONT-COLOR: #000;
     --HEADER-BGCOLOR: #000;
     --HEADER-COLOR: #fff;
-    --NAV-BGCOLOR: #fff;
     --HERO-BGCOLOR: rgba(51, 178, 51, 0.75);
     --HERO-COLOR: #fff;
-    --BUTTON-COLOR: #fff;
+    --HIGHLIGHT-COLOR: rgb(51, 178, 51);
+    --LINK-ACTIVE: #ffa500;
+    --LINK-COLOR: #000;
+    --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
+    --NAV-BGCOLOR: #fff;
 
     /* BORDERS */
     --BORDERS: 1px solid var(--BORDER-COLOR);
@@ -61,19 +61,19 @@ textarea {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --BGCOLOR: #000;
         --BGCOLOR-FADE: #808080;
-        --HEADER-COLOR: #f5f5f5;
-        --NAV-BGCOLOR: rgb(20, 20, 20);
-        --HERO-COLOR: #333;
+        --BGCOLOR: #000;
         --BODY-BGCOLOR: #333;
-        --FONT-COLOR: #f5f5f5;
-        --HIGHLIGHT-COLOR: #f5f5f5;
         --BORDER-COLOR: #f5f5f5;
+        --BUTTON-COLOR: #000;
+        --FONT-COLOR: #f5f5f5;
+        --HEADER-COLOR: #f5f5f5;
+        --HERO-COLOR: #333;
+        --HIGHLIGHT-COLOR: #f5f5f5;
+        --LINK-ACTIVE: rgb(252, 200, 103);
         --LINK-COLOR: #f5f5f5;
         --LINK-HOVER: #ffa500;
-        --LINK-ACTIVE: rgb(252, 200, 103);
-        --BUTTON-COLOR: #000;
+        --NAV-BGCOLOR: rgb(20, 20, 20);
     }
 }
 
