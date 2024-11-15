@@ -203,3 +203,18 @@ a:active {
 .main {
     padding: var(--PADDING-TB) var(--PADDING-SIDE);
 }
+
+.main__article {
+    scroll-margin-top: 6.5rem;
+    margin: var(--MARGIN);
+}
+
+.main__article:first-child {
+    margin-top: 1em;
+}
+
+.main__article:last-child {
+    min-height: calc(100vh - 20rem);
+}
+
+/* || ABOUT */
