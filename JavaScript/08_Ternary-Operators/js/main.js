@@ -1,0 +1,3 @@
+// Conditionals: Ternary Operator
+
+// syntax
