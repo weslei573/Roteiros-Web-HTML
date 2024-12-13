@@ -24,12 +24,12 @@ if (playGame) {
         playerOne === computer
           ? "Tie game!"
           : playerOne === "pedra" && computer === "papel"
-          ? `playerOne: ${playerOne}\nComputer: ${computer}\nComputer wins`
+          ? `playerOne: ${playerOne}\nComputer: ${computer}\nComputer wins!`
           : playerOne === "papel" && computer === "tesoura"
-          ? `playerOne: ${playerOne}\nComputer: ${computer}\nComputer wins`
+          ? `playerOne: ${playerOne}\nComputer: ${computer}\nComputer wins!`
           : playerOne === "tesoura" && computer === "pedra"
-          ? `playerOne: ${playerOne}\nComputer: ${computer}\nComputer wins`
-          : `playerOne: ${playerOne}\nComputer: ${computer}\nComputer wins`;
+          ? `playerOne: ${playerOne}\nComputer: ${computer}\nComputer wins!`
+          : `playerOne: ${playerOne}\nComputer: ${computer}\nplayerOne wins!`;
       alert(result);
       let playAgain = confirm("Jogar novamente?");
       playAgain ? location.reload() : alert("OK, obrigado por jogar.");
